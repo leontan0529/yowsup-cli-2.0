@@ -73,6 +73,22 @@ You need to have installed Python headers (probably from python-dev package) and
 python setup.py install
 ```
 
+### WhatsApp Maintenance
+
+Change directory to env:
+```
+cd yowsup/env
+```
+Retrieve latest WhatsApp Package Installer:
+```
+wget "<WhatsApp_Package_Installer_Link>" -O WhatsApp.apk
+```
+Check latest WhatsApp Version:
+```
+python3 env_utilities.py WhatsApp.apk
+```
+
+
 ### FreeBSD (*BSD)
 You need to have installed: py27-pip-7.1.2(+), py27-sqlite3-2.7.11_7(+), then run
 ```
