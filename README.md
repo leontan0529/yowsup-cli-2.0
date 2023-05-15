@@ -4,6 +4,11 @@ The project started as the protocol engine behind [Wazapp for Meego](https://wik
 library it can be used to power any custom WhatsApp client.
 
 ```
+updated: 15/05/23
+Changes:
+- Added /yowsup-cli-2.0/yowsup/env/env_utilities.py
+  > Script to retrieve latest MD5 and Version values 
+
 updated: 02-05-2023
 yowsup version: 3.3.0
 yowsup-cli version: 3.2.1
@@ -40,7 +45,13 @@ sense to maintain some parts as standalone projects:
  * **[Create a sample app](https://github.com/tgalal/yowsup/wiki/Sample-Application)**
  * **[yowsup-cli](https://github.com/tgalal/yowsup/wiki/yowsup-cli)**
 
-## Installation
+## Installation (Ensure you are root user before proceeding below)
+Prepare system for yowsup-cli-2.0 
+1.
+```
+apt-get update
+```
+
 
 Install using setup.py to pull all Python dependencies, or pip:
 
