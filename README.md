@@ -3,6 +3,8 @@ The project started as the protocol engine behind [Wazapp for Meego](https://wik
 [OpenWA for BB10](https://www.lowyat.net/2013/5896/try-this-openwhatsapp-for-blackberry-10/). Now as a standalone
 library it can be used to power any custom WhatsApp client.
 
+yowsup-cli-2.0 will focus on the development of yowsup-cli in Linux environment. Other installation methods listed in this document are in legacy mode.
+
 ```
 updated: 15/05/23
 Changes:
@@ -46,7 +48,7 @@ sense to maintain some parts as standalone projects:
  * **[yowsup-cli](https://github.com/tgalal/yowsup/wiki/yowsup-cli)**
 
 ## Installation (Ensure you are root user before proceeding below)
-###Prepare system for yowsup-cli-2.0 
+### Prepare system for yowsup-cli-2.0 
 
 1.
 ```
