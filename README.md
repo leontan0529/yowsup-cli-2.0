@@ -52,7 +52,10 @@ sense to maintain some parts as standalone projects:
 
 Ensure operating system is up-to-date:
 ```
+[APT]
 apt-get update ; apt upgrade -y
+apt install python3
+apt install python-pip
 ```
 Install necessary packages using apt:
 ```
