@@ -54,26 +54,36 @@ Ensure operating system is up-to-date:
 ```
 [APT]
 apt-get update ; apt upgrade -y
-apt install python3
-apt install python-pip
+apt install python3 -y
+apt install python-pip -y
+
+[YUM]
+yum check-update ; yum update -y
+yum install python3 -y
+yum install python3-pip -y
 ```
-Install necessary packages using apt:
+Install necessary packages:
 ```
+[APT]
 apt-get install python3-dateutil python3-setuptools python3-dev libevent-dev ncurses-dev libxml2-dev libxslt1-dev python3-lxml
+
+[YUM]
+yum install python3-dateutil python3-setuptools python3-devel libevent-devel ncurses-devel libxml2-devel libxslt-devel python3-lxml
 ```
 
 
 Install all Python dependencies, or pip:
 
 ```
-pip install yowsup pyaxmlparser
+pip install -r requirements.txt
+pip install pyaxmlparser yowsup
 ```
 
 ### Linux
 
 You need to have installed Python headers (probably from python-dev package) and ncurses-dev, then run
 ```
-python setup.py install
+python3 setup.py install
 ```
 
 ### WhatsApp Maintenance
