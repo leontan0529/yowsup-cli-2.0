@@ -25,7 +25,7 @@ try:
         lines = file.readlines()
     lines[19] = "    _MD5_CLASSES = " + '"{0}"'.format(md5) + "\n"
     lines[21] = "    _VERSION = " + '"{0}"'.format(ver) + "\n"
-    with open("cp_env_android.py", "w") as file:
+    with open("env_android.py", "w") as file:
         for line in lines:
             file.write(line)
 
