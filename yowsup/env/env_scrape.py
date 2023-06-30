@@ -3,6 +3,7 @@ import requests
 import re
 import wget
 import time
+import os.path
 
 url = 'https://www.whatsapp.com/android'
 req = requests.get(url)
@@ -13,7 +14,11 @@ def download(extract):
     tries = 3
     for i in range(tries):
         try:
-            wget.download(extract, "WhatsApp.apk")
+            if os.path.isfile('./WhatsApp.apk') == True:
+                os.remove('./WhatsApp.apk')
+                wget.download(extract, "./WhatsApp.apk")
+            else:
+                wget.download(extract, "./WhatsApp.apk")
         except KeyError as e:
             if i < tries - 1:
                 time.sleep(10)
