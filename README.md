@@ -6,7 +6,16 @@ library it can be used to power any custom WhatsApp client.
 yowsup-cli-2.0 will focus on the development of yowsup-cli in Linux (specifically Ubuntu) environment. Other installation methods listed in this document are in legacy mode.
 
 ```
-updated: 15/05/23
+updated: 14-07-23
+Changes:
+- Added /yowsup-cli-2.0/yowsup/env/env_scrape.py
+  > Scrape and download latest WhatsApp.apk
+- Added /yowusup-cli-2.0/yowsup/env/WAmaintenance.sh
+  > Run both env_scrape.py and env_utilities.py
+  > Keep WhatsApp updated
+  > Run a cronjob to always keep your WhatsApp updated
+
+updated: 15-05-23
 Changes:
 - Added /yowsup-cli-2.0/yowsup/env/env_utilities.py
   > Script to retrieve latest MD5 and Version values 
